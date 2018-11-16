@@ -1,16 +1,16 @@
 CXXFLAGS += -std=c++11 -Wall -Wextra -pedantic
 PREFIX ?= /usr/local
 
-termux-elf-cleaner: termux-elf-cleaner.cpp
+linuxdroid-elf-cleaner: linuxdroid-elf-cleaner.cpp
 
 clean:
-	rm -f termux-elf-cleaner
+	rm -f linuxdroid-elf-cleaner
 
-install: termux-elf-cleaner
+install: linuxdroid-elf-cleaner
 	mkdir -p $(PREFIX)/bin
-	install termux-elf-cleaner $(PREFIX)/bin/termux-elf-cleaner
+	install linuxdroid-elf-cleaner $(PREFIX)/bin/linuxdroid-elf-cleaner
 
 uninstall:
-	rm -f $(PREFIX)/bin/termux-elf-cleaner
+	rm -f $(PREFIX)/bin/linuxdroid-elf-cleaner
 
 .PHONY: clean install uninstall
