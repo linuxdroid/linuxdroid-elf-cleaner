@@ -88,7 +88,7 @@ bool process_elf(uint8_t* bytes, size_t elf_file_size, char const* file_name)
 					decltype(dynamic_section_entry->d_un.d_val) new_d_val =
 						(orig_d_val & SUPPORTED_DT_FLAGS_1);
 					if (new_d_val != orig_d_val) {
-						printf("mininix-elf-cleaner: Replacing unsupported DF_1_* flags %llu with %llu in '%s'\n",
+						printf("mininix-elf-cleaner: Repl acing unsupported DF_1_* flags %llu with %llu in '%s'\n",
 						       (unsigned long long) orig_d_val,
 						       (unsigned long long) new_d_val,
 						       file_name);
