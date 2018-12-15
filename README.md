@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # mininix-elf-cleaner
+=======
+# linuxdroid-elf-cleaner
+>>>>>>> 4f7d0687e9dcdb7770999e43976c01c23e4ede1d
 Utility for Android ELF files to remove unused parts that the linker warns about.
 
 # Description
@@ -25,7 +29,11 @@ It also removes the three ELF sections of type:
 
 # Usage
 ```sh
+<<<<<<< HEAD
 usage: mininix-elf-cleaner <filenames>
+=======
+usage: linuxdroid-elf-cleaner <filenames>
+>>>>>>> 4f7d0687e9dcdb7770999e43976c01c23e4ede1d
 
 Processes ELF files to remove unsupported section types and
 dynamic section entries which the Android linker warns about.
