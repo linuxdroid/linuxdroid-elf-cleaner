@@ -1,16 +1,16 @@
 CXXFLAGS += -std=c++11 -Wall -Wextra -pedantic
 PREFIX ?= /usr/local
 
-termux-elf-cleaner: termux-elf-cleaner.cpp
+mininix-elf-cleaner: mininix-elf-cleaner.cpp
 
 clean:
-	rm -f termux-elf-cleaner
+	rm -f mininix-elf-cleaner
 
-install: termux-elf-cleaner
+install: mininix-elf-cleaner
 	mkdir -p $(PREFIX)/bin
-	install termux-elf-cleaner $(PREFIX)/bin/termux-elf-cleaner
+	install mininix-elf-cleaner $(PREFIX)/bin/mininix-elf-cleaner
 
 uninstall:
-	rm -f $(PREFIX)/bin/termux-elf-cleaner
+	rm -f $(PREFIX)/bin/mininix-elf-cleaner
 
 .PHONY: clean install uninstall

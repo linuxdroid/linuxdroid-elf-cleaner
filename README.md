@@ -1,4 +1,4 @@
-# termux-elf-cleaner
+# mininix-elf-cleaner
 Utility for Android ELF files to remove unused parts that the linker warns about.
 
 # Description
@@ -25,7 +25,7 @@ It also removes the three ELF sections of type:
 
 # Usage
 ```sh
-usage: termux-elf-cleaner <filenames>
+usage: mininix-elf-cleaner <filenames>
 
 Processes ELF files to remove unsupported section types and
 dynamic section entries which the Android linker warns about.
